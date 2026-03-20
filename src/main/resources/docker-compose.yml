@@ -1,0 +1,8 @@
+# Docker compose configuration
+version: '3'
+services:
+  app:
+    build: .
+    image: maven:3.9-eclipse-temurin-17
+    ports:
+      - "8080:8080"
